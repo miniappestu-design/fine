@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ecfdf5" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#064e3b" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with safe zone -->
+  <rect width="512" height="512" rx="128" fill="url(#brandGrad)" />
+
+  <!-- Outer energy rings (dynamic wellness & motion) -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#a7f3d0" stroke-width="6" stroke-dasharray="16 12" opacity="0.4" />
+  
+  <g filter="url(#subtleShadow)">
+    <!-- Stylized Heart-Leaf / Active Figure -->
+    <!-- Central energetic leaf shape -->
+    <path d="M 256 120 C 310 120 370 170 370 240 C 370 320 270 380 256 392 C 242 380 142 320 142 240 C 142 170 202 120 256 120 Z" fill="url(#leafGrad)" />
+    
+    <!-- Inner vein dynamic path representing energy & life -->
+    <path d="M 256 160 Q 256 280 256 350" stroke="#059669" stroke-width="14" stroke-linecap="round" fill="none" />
+    <path d="M 256 220 Q 300 190 320 200" stroke="#059669" stroke-width="10" stroke-linecap="round" fill="none" />
+    <path d="M 256 260 Q 200 240 190 250" stroke="#059669" stroke-width="10" stroke-linecap="round" fill="none" />
+    <path d="M 256 295 Q 310 280 320 290" stroke="#059669" stroke-width="10" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Subtle star sparkle indicating AI guidance & personal growth -->
+  <path d="M 360 140 Q 375 140 375 125 Q 375 140 390 140 Q 375 140 375 155 Q 375 140 360 140 Z" fill="#fef08a" />
+</svg>

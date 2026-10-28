@@ -1,0 +1,6 @@
+{
+  "name": "Fit en Casa",
+  "description": "Aplicación premium de ejercicio, alimentación y hábitos saludables con inteligencia artificial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1464 @@
+PROMPT MAESTRO — FIT EN CASA
+
+Aplicación premium de ejercicio, alimentación y hábitos saludables con inteligencia artificial
+
+Actúa como un equipo senior compuesto por arquitectos de software, desarrolladores full-stack, especialistas en Gemini, diseñadores UX/UI, expertos en aplicaciones móviles web, especialistas en seguridad y profesionales de diseño de experiencias digitales de salud y bienestar.
+
+Tu misión es DISEÑAR, PROGRAMAR, INTEGRAR, PROBAR Y ENTREGAR una aplicación web funcional llamada Fit en Casa, utilizando las capacidades de creación de aplicaciones de Google AI Studio y los modelos Gemini disponibles.
+
+No quiero una simple landing page, un prototipo estático, una presentación, un PDF ni una interfaz de demostración sin funcionalidad.
+
+Quiero una aplicación real, interactiva, moderna, premium y responsive, preparada para ejecutarse, probarse y desplegarse.
+
+No te limites a explicar cómo construirla ni me entregues solamente fragmentos de código. Crea la aplicación directamente en el entorno de desarrollo disponible, implementa sus funcionalidades y verifica el resultado.
+
+Si una integración requiere credenciales, configuración externa o permisos que todavía no existen, construye la integración real hasta donde sea posible, documenta exactamente lo que falta y ofrece un modo alternativo funcional. Nunca simules una integración como si estuviera conectada.
+
+⸻
+
+1. VISIÓN Y OBJETIVO DEL PRODUCTO
+
+Nombre: Fit en Casa.
+
+Categoría: bienestar, ejercicio en casa, alimentación equilibrada, hábitos saludables e inteligencia artificial.
+
+Idioma inicial: español.
+
+Concepto principal:
+
+Fit en Casa es un compañero digital que ayuda a cualquier persona a organizar su día, realizar ejercicio adaptado a sus circunstancias, encontrar comidas sencillas y desarrollar hábitos saludables de manera progresiva.
+
+La aplicación debe responder a una pregunta fundamental:
+
+«¿Qué puedo hacer hoy para cuidarme mejor, teniendo en cuenta mi tiempo, mis preferencias y mi nivel de experiencia?»
+
+La experiencia debe transmitir confianza, claridad, motivación, tranquilidad y profesionalidad.
+
+No utilizar mensajes que culpabilicen al usuario, prometan transformaciones físicas milagrosas o promuevan comportamientos extremos.
+
+Público objetivo
+
+Personas adultas con distintos niveles de experiencia que quieran:
+
+* Incorporar ejercicio a su vida cotidiana.
+* Entrenar en casa con o sin equipamiento.
+* Organizar comidas equilibradas.
+* Mejorar sus hábitos diarios.
+* Encontrar alternativas prácticas cuando tengan poco tiempo.
+* Mantener la constancia sin sentirse abrumadas.
+* Recibir orientación general mediante inteligencia artificial.
+
+La experiencia inicial debe ser sencilla para principiantes, pero útil también para personas con experiencia.
+
+⸻
+
+2. REQUISITOS OBLIGATORIOS
+
+La aplicación debe cumplir todas estas condiciones:
+
+1. Ser una aplicación interactiva real, no una página informativa.
+2. Tener navegación principal mediante una barra inferior fija.
+3. Funcionar en móviles, tabletas y ordenadores.
+4. Incluir Inicio, Entrenamiento, Alimentación, Asistente IA y Progreso.
+5. Incorporar un perfil de usuario y preferencias configurables.
+6. Tener persistencia real de los datos.
+7. Integrar Gemini de manera segura para las funciones de IA.
+8. Incluir contenido inicial utilizable de ejercicios, recetas y hábitos.
+9. Ofrecer un panel administrativo básico y protegido.
+10. Incluir una experiencia de instalación como PWA compatible con los mecanismos de instalación de iPhone y Android.
+11. Traducir absolutamente toda la interfaz a los siete idiomas especificados en este documento.
+12. No mostrar precios, pagos, planes comerciales, créditos, membresías, suscripciones ni límites artificiales de uso.
+13. No incluir botones decorativos que aparenten funcionalidades inexistentes.
+14. No inventar datos de salud, resultados, integraciones, estadísticas ni conexiones externas.
+15. No exponer claves de API, secretos, credenciales administrativas ni información privada en el navegador.
+
+Prioriza una implementación funcional de extremo a extremo sobre una acumulación innecesaria de características.
+
+⸻
+
+3. DISEÑO VISUAL PREMIUM
+
+Crea una identidad visual propia para Fit en Casa.
+
+Dirección artística
+
+La interfaz debe sentirse como una aplicación moderna de bienestar, con una estética limpia, cálida, profesional y contemporánea.
+
+Utiliza:
+
+* Fondo claro y superficies limpias.
+* Verde natural como color de acento principal.
+* Tonos neutros para fondos, textos y separadores.
+* Tipografía legible y jerarquía visual clara.
+* Tarjetas con bordes suaves.
+* Iconos coherentes.
+* Ilustraciones o fotografías apropiadas cuando aporten valor.
+* Indicadores visuales de progreso.
+* Microinteracciones discretas.
+* Transiciones suaves.
+* Estados de carga, éxito, error y ausencia de contenido.
+* Espaciado consistente.
+* Contraste accesible.
+* Componentes reutilizables.
+
+No satures las pantallas con colores, gráficos o animaciones.
+
+Evita el aspecto de una plantilla genérica de administración.
+
+El resultado debe parecer un producto digital profesional, no una página web corporativa tradicional.
+
+Identidad de marca
+
+Nombre visible: Fit en Casa.
+
+Eslogan en español: «Pequeños hábitos. Una vida más saludable».
+
+Crea un logotipo sencillo mediante recursos gráficos o SVG propios, sin depender de imágenes externas que puedan desaparecer.
+
+El logotipo y los textos de marca también deben respetar el sistema de idiomas cuando corresponda.
+
+Adaptación responsive
+
+Móvil:
+
+* Experiencia prioritaria para pantallas pequeñas.
+* Navegación inferior fija.
+* Controles táctiles cómodos.
+* Tarjetas en una columna.
+* Formularios sencillos.
+* Contenido desplazable sin bloquear la navegación.
+
+Tableta:
+
+* Distribución equilibrada de tarjetas.
+* Aprovechamiento del espacio horizontal.
+* Navegación consistente.
+
+Ordenador:
+
+* Contenido centrado con ancho máximo apropiado.
+* Tarjetas en varias columnas cuando tenga sentido.
+* Formularios y paneles con buena legibilidad.
+* Barra inferior mantenida como navegación principal.
+
+No sustituyas la barra inferior por una barra superior en ninguna resolución.
+
+Barra inferior fija
+
+Implementa una barra inferior persistente con cinco secciones:
+
+1. Inicio.
+2. Entrenamiento.
+3. Alimentación.
+4. Asistente.
+5. Progreso.
+
+Cada opción debe incluir un icono, una etiqueta traducida y un indicador claro de selección.
+
+La barra debe respetar las áreas seguras de los dispositivos móviles y no tapar botones, formularios ni contenido.
+
+El perfil, la configuración, el idioma y la instalación deben ser accesibles desde Inicio o desde un menú secundario intuitivo.
+
+⸻
+
+4. ONBOARDING Y PERFIL PERSONALIZADO
+
+En la primera visita, muestra una bienvenida breve y atractiva.
+
+Incluye un botón principal traducido equivalente a «Comenzar».
+
+Después, presenta un asistente de configuración por pasos.
+
+Solicita únicamente la información necesaria para personalizar la experiencia:
+
+* Nombre opcional o alias.
+* Objetivo principal.
+* Nivel de experiencia.
+* Tiempo disponible para entrenar.
+* Días preferidos.
+* Equipamiento disponible.
+* Preferencias alimentarias.
+* Alergias o ingredientes que desea evitar.
+* Idioma.
+* Preferencias de recordatorios, si se implementan.
+
+Los objetivos deben incluir:
+
+* Crear hábitos saludables.
+* Moverse más.
+* Mejorar la condición física.
+* Desarrollar fuerza.
+* Organizar la alimentación.
+* Mejorar la constancia.
+
+Permite elegir más de un objetivo.
+
+Incluye opciones para saltar preguntas no esenciales, volver al paso anterior y editar los datos posteriormente.
+
+No solicites datos sensibles que no sean necesarios.
+
+No solicites fotografías corporales, información médica detallada, dirección, documentos de identidad ni datos de pago.
+
+Cuando resulte necesario conocer limitaciones relevantes para la seguridad del ejercicio, utiliza preguntas mínimas y opcionales, con lenguaje claro y sin realizar diagnósticos.
+
+Si el usuario indica una limitación física, una condición médica relevante o una situación que requiere atención especializada, evita prescribir rutinas potencialmente inadecuadas y recomienda orientación profesional.
+
+Al terminar la configuración:
+
+1. Guarda las preferencias.
+2. Genera una propuesta inicial coherente.
+3. Dirige al usuario a Inicio.
+4. Permite modificar el perfil en cualquier momento.
+
+No vuelvas a mostrar el onboarding completo si el perfil ya está configurado, salvo que el usuario solicite reiniciarlo.
+
+⸻
+
+5. PANTALLA DE INICIO
+
+Inicio es el centro de la aplicación.
+
+Debe mostrar información útil para el día actual y evitar que el usuario tenga que navegar por numerosas pantallas para encontrar qué hacer.
+
+Incluye:
+
+Encabezado
+
+* Saludo personalizado, si existe un nombre.
+* Fecha local.
+* Acceso al perfil.
+* Selector de idioma accesible.
+* Indicador de instalación cuando corresponda.
+
+Resumen diario
+
+Mostrar tarjetas con:
+
+* Objetivo principal del día.
+* Rutina recomendada.
+* Idea de comida.
+* Hábitos pendientes.
+* Actividades completadas.
+* Acceso directo al asistente.
+
+Plan de hoy
+
+Crear una secuencia diaria sencilla que pueda contener:
+
+* Una actividad física apropiada.
+* Una sugerencia de comida.
+* Un hábito de bienestar.
+* Una acción opcional de recuperación o descanso.
+
+No es obligatorio que todos los días incluyan entrenamiento intenso.
+
+El descanso también puede formar parte de un plan saludable.
+
+Acciones rápidas
+
+Implementa botones funcionales para:
+
+* Empezar una rutina.
+* Ver una receta.
+* Consultar al asistente.
+* Registrar un hábito.
+* Revisar el progreso.
+
+Estados de la pantalla
+
+Debe haber estados para:
+
+* Primera visita.
+* Perfil configurado.
+* Plan disponible.
+* Plan todavía no generado.
+* Error temporal.
+* Sin conexión, cuando corresponda.
+
+Si la IA no está disponible, muestra contenido previamente guardado y opciones para continuar sin conexión cuando los datos locales lo permitan.
+
+No presentes un plan generado por reglas como si hubiera sido generado por Gemini.
+
+⸻
+
+6. MÓDULO DE ENTRENAMIENTO
+
+Crea una sección completa para entrenamientos en casa.
+
+Catálogo inicial
+
+Incluye un catálogo estructurado de ejercicios con:
+
+* Identificador.
+* Nombre traducible.
+* Grupo de movimientos o categoría.
+* Nivel de dificultad.
+* Material necesario.
+* Duración o repeticiones.
+* Instrucciones paso a paso.
+* Consejos de técnica.
+* Alternativas de menor impacto.
+* Precauciones relevantes.
+
+Incluye categorías como:
+
+* Movilidad.
+* Fuerza.
+* Cuerpo completo.
+* Tren superior.
+* Tren inferior.
+* Equilibrio.
+* Actividad cardiovascular de bajo impacto.
+* Recuperación y estiramientos suaves.
+
+Los ejercicios deben poder filtrarse por:
+
+* Nivel.
+* Duración.
+* Equipamiento.
+* Categoría.
+* Preferencias del usuario.
+
+Incluye ejercicios sin material, pero no supongas que todos son adecuados para todas las personas.
+
+No inventes vídeos, enlaces de demostración ni recursos que no existan.
+
+Rutinas
+
+Permite:
+
+* Consultar una rutina.
+* Ver su duración estimada.
+* Ver los ejercicios que contiene.
+* Consultar las instrucciones.
+* Iniciar la sesión.
+* Pausar.
+* Reanudar.
+* Avanzar al siguiente ejercicio.
+* Volver al anterior.
+* Saltar un ejercicio.
+* Terminar la sesión.
+* Registrar el entrenamiento completado.
+
+Implementa temporizadores funcionales cuando una rutina los requiera.
+
+Los temporizadores deben gestionarse correctamente al cambiar de pantalla, pausar o reanudar.
+
+No inicies automáticamente actividades físicas.
+
+Generador de rutinas con IA
+
+El asistente podrá proponer rutinas considerando:
+
+* Tiempo disponible.
+* Experiencia.
+* Equipamiento.
+* Objetivos.
+* Preferencias.
+* Historial de actividad cuando exista.
+
+La IA no debe inventar que conoce el estado físico real del usuario.
+
+Las propuestas deben ser claras y contener duración, ejercicios, instrucciones y alternativas.
+
+No prescribas rutinas de rehabilitación, tratamientos ni ejercicios de alto riesgo.
+
+Si el usuario comunica dolor, mareos, dificultad respiratoria inusual u otros síntomas preocupantes, detén la recomendación de continuar y ofrece una indicación prudente de buscar ayuda apropiada.
+
+Antes de comenzar, muestra las precauciones necesarias y permite cancelar fácilmente.
+
+⸻
+
+7. MÓDULO DE ALIMENTACIÓN
+
+Crea una sección interactiva para organizar comidas y descubrir recetas sencillas.
+
+El propósito es facilitar hábitos alimentarios equilibrados, no diagnosticar, tratar enfermedades ni imponer dietas extremas.
+
+Catálogo de recetas
+
+Incluye recetas iniciales revisadas y estructuradas con:
+
+* Identificador.
+* Nombre.
+* Descripción breve.
+* Tipo de comida.
+* Ingredientes.
+* Cantidades cuando estén definidas.
+* Instrucciones.
+* Tiempo estimado de preparación.
+* Número de porciones.
+* Alérgenos conocidos.
+* Sustituciones razonables.
+* Etiquetas de preferencias alimentarias.
+
+Utiliza cantidades coherentes y evita afirmaciones nutricionales no verificadas.
+
+Si no dispones de información fiable sobre calorías o macronutrientes, no inventes cifras.
+
+Distingue entre información conocida y estimaciones.
+
+Funciones
+
+Implementa:
+
+* Catálogo de recetas.
+* Búsqueda.
+* Filtros por tipo de comida.
+* Preferencias alimentarias.
+* Exclusión de ingredientes.
+* Favoritos.
+* Detalle de receta.
+* Preparación paso a paso.
+* Planificación semanal básica.
+* Lista de compras generada a partir de recetas seleccionadas.
+
+La lista de compras debe consolidar ingredientes equivalentes cuando sea posible, sin combinar unidades incompatibles.
+
+Permite editar, marcar y desmarcar elementos.
+
+Planificador semanal
+
+El usuario debe poder:
+
+* Elegir una semana.
+* Asignar recetas a días y comidas.
+* Sustituir una receta.
+* Eliminar una asignación.
+* Consultar las comidas planificadas.
+* Generar la lista de compras correspondiente.
+
+Guarda los cambios de forma persistente.
+
+Asistente de alimentación
+
+Permite preguntas como:
+
+* «¿Qué puedo cocinar con estos ingredientes?»
+* «Sugiere una comida sencilla para hoy».
+* «Dame una alternativa sin el ingrediente que quiero evitar».
+* «Ayúdame a organizar mis comidas de la semana».
+
+No garantices que una receta sea segura para una alergia basándote únicamente en una respuesta generada por IA.
+
+Identifica posibles alérgenos a partir de datos estructurados y advierte al usuario que compruebe etiquetas, contaminación cruzada y composición real de los productos.
+
+No recomiendes dietas extremas, purgas, ayunos peligrosos, restricciones severas ni estrategias para perder peso rápidamente.
+
+Si el usuario indica una alergia grave, un trastorno alimentario o una condición médica que exige alimentación especializada, ofrece orientación general prudente y recomienda atención profesional.
+
+⸻
+
+8. ASISTENTE DE INTELIGENCIA ARTIFICIAL CON GEMINI
+
+Implementa un asistente conversacional funcional, integrado con un modelo Gemini disponible en Google AI Studio.
+
+Nombre del asistente: Fit en Casa AI.
+
+Su misión es ayudar a los usuarios a organizar ejercicio, alimentación y hábitos saludables.
+
+Funciones principales
+
+El asistente debe poder:
+
+1. Crear sugerencias diarias.
+2. Adaptar propuestas al tiempo disponible.
+3. Recomendar ejercicios incluidos en el catálogo.
+4. Proponer comidas basadas en el catálogo y las preferencias.
+5. Ayudar a planificar una semana.
+6. Sugerir alternativas cuando cambian los horarios.
+7. Explicar cómo realizar una actividad de forma general y prudente.
+8. Ayudar a mantener la constancia.
+9. Resumir los hábitos registrados.
+10. Responder en el idioma seleccionado.
+
+Contexto personalizado
+
+Con autorización y según la configuración de privacidad, el asistente podrá utilizar:
+
+* Objetivos.
+* Nivel de experiencia.
+* Tiempo disponible.
+* Equipamiento.
+* Preferencias alimentarias.
+* Alergias declaradas.
+* Actividades registradas.
+* Planificación actual.
+
+No envíes todo el historial del usuario en cada petición si no es necesario.
+
+Minimiza la información compartida con el modelo.
+
+Reglas de funcionamiento
+
+* Responde en el idioma seleccionado por el usuario.
+* Ofrece consejos concretos y fáciles de aplicar.
+* Haz preguntas cuando falte información importante.
+* Evita respuestas excesivamente largas.
+* No inventes datos del perfil.
+* No afirmes que una actividad se completó si no existe un registro.
+* No inventes recetas disponibles en el catálogo.
+* Distingue entre sugerencias y acciones realmente guardadas.
+* Nunca declares que has guardado un plan si la operación ha fallado.
+
+Cuando el usuario solicite un cambio, genera una propuesta estructurada y pide confirmación cuando sea necesario.
+
+Solo guarda el cambio después de la confirmación correspondiente y de que la operación de persistencia haya tenido éxito.
+
+Implementación técnica de Gemini
+
+Utiliza el SDK y los patrones de integración compatibles con la versión disponible en el entorno de Google AI Studio.
+
+Antes de elegir paquetes, verifica la documentación y las dependencias existentes en el proyecto.
+
+No inventes nombres de modelos, funciones del SDK, endpoints ni parámetros.
+
+Utiliza una variable de configuración para el modelo y selecciona un modelo Gemini disponible y adecuado para tareas conversacionales.
+
+No expongas la clave de API en el código del cliente, en el HTML, en los archivos públicos ni en el repositorio.
+
+Si la aplicación requiere un servidor:
+
+* Implementa una ruta de servidor para las solicitudes a Gemini.
+* Guarda la clave en un gestor de secretos o variable de entorno protegida.
+* Valida la entrada.
+* Limita el tamaño de las peticiones.
+* Gestiona errores y tiempos de espera.
+* No registres datos personales innecesarios.
+* Aplica controles contra abuso.
+* Devuelve errores traducibles sin exponer información interna.
+
+Si Google AI Studio proporciona una integración administrada compatible con la arquitectura elegida, utilízala correctamente sin duplicar innecesariamente la infraestructura.
+
+Respuestas estructuradas
+
+Cuando la aplicación necesite crear rutinas, recetas o planes, utiliza salidas estructuradas compatibles con el SDK.
+
+Define esquemas validados para:
+
+* Rutinas.
+* Ejercicios.
+* Recetas.
+* Planes diarios.
+* Sugerencias de hábitos.
+
+Valida siempre las respuestas antes de mostrarlas o guardarlas.
+
+No permitas que una respuesta de IA ejecute directamente operaciones arbitrarias en la base de datos.
+
+La IA propone; la lógica de la aplicación valida y ejecuta las acciones permitidas.
+
+Estados del asistente
+
+Implementa:
+
+* Estado inicial.
+* Mensaje del usuario.
+* Indicador de respuesta.
+* Respuesta del asistente.
+* Error de conexión.
+* Reintento.
+* Conversación vacía.
+* Acciones sugeridas.
+* Historial recuperable, si está habilitado.
+
+Incluye sugerencias rápidas como:
+
+* «Organiza mi día».
+* «Sugiere una rutina».
+* «Ayúdame con una comida».
+* «Planifica mi semana».
+* «Dame una idea para mantener la constancia».
+
+El chat debe ser realmente funcional.
+
+Si Gemini no está configurado, muestra un aviso de configuración traducido y ofrece funciones locales disponibles. Nunca simules una respuesta de Gemini.
+
+⸻
+
+9. HÁBITOS SALUDABLES
+
+Crea un sistema flexible de hábitos diarios.
+
+Incluye hábitos iniciales como:
+
+* Realizar una actividad física apropiada.
+* Incorporar movimiento durante el día.
+* Organizar una comida.
+* Dedicar tiempo a la recuperación.
+* Realizar una actividad relajante.
+* Seguir una rutina personal elegida por el usuario.
+
+La hidratación puede registrarse opcionalmente, pero no establezcas objetivos médicos universales ni obligues a beber cantidades fijas sin considerar las circunstancias personales.
+
+Funciones
+
+* Ver hábitos diarios.
+* Marcar un hábito como completado.
+* Deshacer una marca.
+* Añadir un hábito personalizado.
+* Editar un hábito.
+* Desactivar un hábito.
+* Consultar registros anteriores.
+* Mostrar un resumen diario y semanal.
+
+Los hábitos deben ser editables.
+
+No penalices al usuario por saltarse un día.
+
+No utilices mensajes de vergüenza, fracaso o culpa.
+
+Las rachas son opcionales y deben presentarse de forma positiva.
+
+El estado de un hábito debe guardarse en la base de datos o en el almacenamiento local apropiado, según la arquitectura implementada.
+
+Evita crear registros duplicados cuando el usuario pulse varias veces.
+
+⸻
+
+10. PANTALLA DE PROGRESO
+
+Crea una sección visual y comprensible que muestre la evolución de los hábitos.
+
+Incluye:
+
+* Calendario de actividad.
+* Entrenamientos completados.
+* Hábitos registrados.
+* Resumen de consistencia semanal.
+* Historial de actividades.
+* Objetivos personales.
+* Mensajes positivos basados en datos reales.
+* Resumen generado por IA, si está disponible.
+
+Las estadísticas deben calcularse a partir de registros reales.
+
+No inventes actividad histórica para llenar gráficos.
+
+Cuando no existan datos, presenta un estado vacío atractivo y una invitación a comenzar.
+
+Los gráficos deben tener etiquetas, unidades cuando correspondan y descripciones accesibles.
+
+No presentes correlaciones como relaciones causales.
+
+No interpretes el progreso como diagnóstico médico.
+
+No centres toda la experiencia en el peso corporal.
+
+Permite eliminar registros y exportar los datos personales cuando resulte viable.
+
+⸻
+
+11. PERFIL, AJUSTES Y PREFERENCIAS
+
+Crea una pantalla de perfil que permita gestionar:
+
+* Nombre o alias.
+* Objetivos.
+* Nivel de experiencia.
+* Disponibilidad.
+* Equipamiento.
+* Preferencias alimentarias.
+* Ingredientes que desea evitar.
+* Idioma.
+* Preferencias de notificaciones.
+* Preferencias de privacidad.
+* Exportación de datos.
+* Eliminación de datos.
+* Cierre de sesión, si existe autenticación.
+
+Todos los formularios deben validar los datos.
+
+Las preferencias deben guardarse de manera persistente.
+
+Si una opción no se encuentra implementada, no la presentes como si estuviera funcionando.
+
+⸻
+
+12. SISTEMA MULTILINGÜE COMPLETO
+
+Este requisito es crítico.
+
+La aplicación debe ofrecer un selector de idioma con exactamente estas siete variantes:
+
+1. Español.
+2. Português (Portugal).
+3. Português (Brasil).
+4. English (United States).
+5. English (United Kingdom).
+6. Français.
+7. Italiano.
+
+El español será el idioma predeterminado.
+
+Utiliza códigos de idioma adecuados, por ejemplo:
+
+* es
+* pt-PT
+* pt-BR
+* en-US
+* en-GB
+* fr
+* it
+
+No confundas el inglés de Estados Unidos con el inglés del Reino Unido, ni el portugués de Portugal con el de Brasil.
+
+Traducción integral obligatoria
+
+La traducción debe aplicarse a absolutamente todos los elementos visibles:
+
+* Títulos.
+* Subtítulos.
+* Navegación.
+* Barra inferior.
+* Botones.
+* Etiquetas.
+* Formularios.
+* Placeholders.
+* Instrucciones.
+* Onboarding.
+* Rutinas.
+* Categorías.
+* Ejercicios.
+* Recetas.
+* Ingredientes cuando exista una traducción apropiada.
+* Mensajes de éxito.
+* Mensajes de error.
+* Validaciones.
+* Notificaciones.
+* Ventanas modales.
+* Estados de carga.
+* Estados vacíos.
+* Confirmaciones.
+* Panel administrativo.
+* Ajustes.
+* Ayudas.
+* Accesibilidad.
+* Mensajes de instalación.
+* Conversaciones del asistente.
+* Respuestas generadas por IA.
+
+No dejes textos codificados directamente en los componentes cuando deban formar parte del sistema de traducciones.
+
+Arquitectura de traducción
+
+Implementa un sistema centralizado de internacionalización.
+
+Utiliza archivos o módulos de traducción organizados por idioma.
+
+Cada clave visible debe tener su equivalente en los siete idiomas.
+
+Evita mezclar traducciones automáticas improvisadas en cada componente.
+
+Utiliza un idioma de respaldo solo durante el desarrollo. Antes de entregar, comprueba que no falten claves.
+
+Cambio de idioma
+
+Cuando el usuario cambie el idioma:
+
+1. Actualiza inmediatamente toda la interfaz.
+2. Actualiza el contenido del menú inferior.
+3. Actualiza formularios y mensajes.
+4. Actualiza fechas, números y formatos locales cuando corresponda.
+5. Guarda la preferencia.
+6. Mantén la pantalla actual.
+7. Evita recargar toda la aplicación innecesariamente.
+
+El idioma debe persistir al cerrar y volver a abrir la aplicación.
+
+Contenido generado por IA
+
+Todas las respuestas del asistente deben generarse en el idioma seleccionado.
+
+Incluye el idioma activo explícitamente en las instrucciones de cada solicitud a Gemini.
+
+No dependas únicamente de pedir al usuario que escriba en un idioma concreto.
+
+Si se muestran ejercicios o recetas almacenados, utiliza sus campos traducidos.
+
+Si no existe una traducción disponible, proporciona una traducción revisada antes de mostrar el contenido y no mezcles idiomas dentro de una misma pantalla.
+
+El idioma seleccionado por el usuario tiene prioridad sobre el idioma del navegador.
+
+Validación
+
+Crea una comprobación que detecte:
+
+* Claves ausentes.
+* Textos visibles sin traducir.
+* Etiquetas codificadas fuera del sistema de traducción.
+* Mensajes de error sin traducir.
+* Componentes que no reaccionen al cambio de idioma.
+* Respuestas de IA en un idioma diferente al seleccionado.
+
+No consideres terminado el proyecto hasta comprobar los siete idiomas.
+
+⸻
+
+13. BASE DE DATOS Y PERSISTENCIA
+
+Implementa una arquitectura de persistencia real.
+
+Utiliza una base de datos y un sistema de autenticación compatibles con la arquitectura disponible en Google AI Studio.
+
+Si el proyecto se beneficia de Firebase, evalúa Firebase Authentication y Cloud Firestore. Utiliza sus SDK y reglas oficiales compatibles con la versión elegida.
+
+No afirmes que Firebase está conectado si todavía faltan credenciales, configuración o permisos.
+
+No es obligatorio utilizar Firebase si existe una alternativa mejor soportada por el entorno, pero debes elegir una arquitectura concreta y explicar brevemente la decisión en el README del proyecto.
+
+Modelo de datos recomendado
+
+users
+
+* id
+* displayName
+* preferredLanguage
+* createdAt
+* updatedAt
+
+profiles
+
+* userId
+* goals
+* experienceLevel
+* availableTime
+* preferredDays
+* equipment
+* dietaryPreferences
+* excludedIngredients
+* reminderPreferences
+
+exercises
+
+* id
+* category
+* difficulty
+* equipment
+* duration
+* repetitions
+* instructionsByLocale
+* precautionsByLocale
+* alternatives
+
+routines
+
+* id
+* titleByLocale
+* descriptionByLocale
+* level
+* estimatedDuration
+* exercises
+* tags
+
+recipes
+
+* id
+* titleByLocale
+* descriptionByLocale
+* mealType
+* ingredientsByLocale
+* instructionsByLocale
+* preparationTime
+* servings
+* allergens
+* tags
+
+dailyPlans
+
+* id
+* userId
+* date
+* workoutReference
+* mealReferences
+* habitReferences
+* status
+* createdAt
+* updatedAt
+
+activityLogs
+
+* id
+* userId
+* activityType
+* referenceId
+* date
+* status
+* notes
+* createdAt
+
+habits
+
+* id
+* userId
+* titleByLocale
+* descriptionByLocale
+* active
+* createdAt
+
+habitLogs
+
+* id
+* userId
+* habitId
+* localDate
+* completed
+* updatedAt
+
+mealPlans
+
+* id
+* userId
+* weekStart
+* assignments
+* updatedAt
+
+favorites
+
+* id
+* userId
+* itemType
+* itemId
+* createdAt
+
+conversations
+
+* id
+* userId
+* title
+* updatedAt
+
+conversationMessages
+
+* id
+* conversationId
+* role
+* content
+* createdAt
+
+Adapta el esquema al almacenamiento elegido.
+
+No crees tablas innecesarias si el servicio seleccionado utiliza otra estructura.
+
+Reglas de persistencia
+
+* Los registros personales deben estar asociados al usuario correcto.
+* Los usuarios no pueden acceder a datos privados de otros usuarios.
+* Las fechas deben manejarse de forma consistente y respetar la fecha local del usuario.
+* Evita duplicados.
+* Implementa operaciones de creación, lectura, actualización y eliminación donde correspondan.
+* Gestiona errores de escritura y lectura.
+* Muestra estados de guardado.
+* No muestres confirmaciones de guardado hasta recibir una respuesta satisfactoria.
+* Permite exportar y eliminar los datos personales según la arquitectura implementada.
+
+Modo de prueba
+
+Si todavía no hay configuración de base de datos, crea un modo de demostración explícito.
+
+En ese modo:
+
+* Guarda los datos de prueba en almacenamiento local cuando corresponda.
+* Explica que esos datos pertenecen al dispositivo.
+* No afirmes que están sincronizados con la nube.
+* No uses datos de prueba como estadísticas reales.
+* Permite migrar a persistencia remota sin reescribir toda la aplicación.
+
+El modo de demostración debe poder identificarse claramente en la configuración y en la documentación.
+
+⸻
+
+14. AUTENTICACIÓN Y SEGURIDAD
+
+Implementa autenticación cuando se utilice almacenamiento remoto con cuentas de usuario.
+
+La aplicación puede permitir explorar una experiencia inicial sin registro, pero debe solicitar autenticación antes de guardar en la nube información que necesite una identidad persistente.
+
+Utiliza los mecanismos de autenticación compatibles con la arquitectura seleccionada.
+
+No crees una autenticación casera insegura.
+
+Seguridad obligatoria
+
+* Validación de entradas tanto en cliente como en servidor.
+* Reglas de acceso para datos personales.
+* Separación entre usuarios.
+* Protección de credenciales.
+* Secretos almacenados fuera del código público.
+* Autorización del panel administrativo.
+* Gestión de errores sin exponer secretos.
+* Protección razonable contra abuso de la API.
+* Límites técnicos para evitar peticiones excesivas al servicio externo, sin convertirlos en límites artificiales visibles para el usuario.
+* No almacenar información sensible innecesaria.
+* No registrar conversaciones privadas en logs públicos.
+* No confiar en los datos enviados desde el navegador.
+* No permitir que la IA cambie roles, permisos o reglas de seguridad.
+
+Las reglas de acceso deben estar implementadas en el servidor o en la base de datos, no únicamente en la interfaz.
+
+Si se utiliza Firebase, configura reglas de seguridad explícitas y evita reglas abiertas de lectura o escritura.
+
+Documenta las variables de entorno necesarias mediante un archivo de ejemplo sin credenciales reales.
+
+⸻
+
+15. PANEL ADMINISTRATIVO BÁSICO
+
+Implementa una sección administrativa independiente y protegida.
+
+Debe permitir:
+
+* Consultar un resumen de la aplicación.
+* Crear, editar y desactivar ejercicios.
+* Crear, editar y desactivar rutinas.
+* Crear, editar y desactivar recetas.
+* Gestionar traducciones de contenidos.
+* Revisar el estado de configuración de servicios.
+* Consultar errores técnicos generales sin exponer datos privados.
+* Gestionar contenido inicial.
+* Consultar indicadores agregados de uso cuando exista una base de datos y una justificación de privacidad.
+
+El panel no debe ser accesible mediante una simple condición visual del frontend.
+
+Utiliza roles o permisos verificados en el servidor.
+
+No permitas que un usuario se convierta en administrador modificando una variable del navegador.
+
+No crees contraseñas administrativas predeterminadas ni publiques credenciales.
+
+Si la configuración de roles todavía no está disponible, protege el acceso de forma explícita y documenta los pasos necesarios para habilitarlo.
+
+El panel administrativo también debe estar completamente traducido.
+
+⸻
+
+16. PWA E INSTALACIÓN EN DISPOSITIVOS
+
+Prepara la aplicación como Progressive Web App cuando la arquitectura de Google AI Studio lo permita.
+
+Incluye:
+
+* Web app manifest válido.
+* Nombre y nombre corto.
+* Iconos de aplicación.
+* Colores del tema.
+* Configuración de visualización apropiada.
+* Service worker cuando corresponda.
+* Estrategia de caché segura.
+* Pantalla de inicio apropiada.
+* Soporte para áreas seguras en dispositivos móviles.
+* Funcionamiento degradado cuando no exista conexión.
+
+No almacenes respuestas privadas del asistente ni información sensible en cachés públicos.
+
+Botón de instalación
+
+Crea una opción visible y traducida equivalente a «Instalar aplicación» o «Añadir a la pantalla de inicio».
+
+En navegadores compatibles, utiliza el mecanismo de instalación que esté realmente disponible.
+
+En iPhone y otros entornos sin un evento de instalación compatible, muestra instrucciones breves para utilizar la opción de compartir del navegador y añadir la aplicación a la pantalla de inicio.
+
+No muestres el botón como si la instalación se hubiera completado sin confirmación.
+
+Si la instalación no está disponible en ese momento, explica la alternativa apropiada.
+
+La aplicación debe funcionar bajo HTTPS en producción.
+
+⸻
+
+17. NOTIFICACIONES Y RECORDATORIOS
+
+Incluye preferencias de recordatorios opcionales.
+
+Si implementas notificaciones:
+
+* Solicita permiso únicamente cuando el usuario active la función y comprenda su finalidad.
+* Respeta las preferencias.
+* Permite desactivarlas fácilmente.
+* No generes notificaciones invasivas.
+* Traduce todo el contenido.
+* Gestiona correctamente la zona horaria.
+
+Si el entorno no admite notificaciones push o tareas programadas sin infraestructura adicional, no simules su funcionamiento.
+
+Ofrece una alternativa sencilla dentro de la aplicación y documenta lo necesario para habilitar la funcionalidad avanzada.
+
+⸻
+
+18. ACCESIBILIDAD Y CALIDAD
+
+La aplicación debe seguir buenas prácticas de accesibilidad.
+
+Incluye:
+
+* Etiquetas accesibles.
+* Navegación mediante teclado.
+* Foco visible.
+* Contraste adecuado.
+* Formularios correctamente etiquetados.
+* Mensajes de error comprensibles.
+* Alternativas textuales para iconos relevantes.
+* Compatibilidad razonable con lectores de pantalla.
+* Respeto por la preferencia de movimiento reducido.
+* Controles táctiles cómodos.
+* Jerarquía semántica correcta.
+
+Evita animaciones que interfieran con el uso de la aplicación.
+
+No dependas únicamente del color para comunicar estados.
+
+⸻
+
+19. ARQUITECTURA DEL CÓDIGO
+
+Antes de programar:
+
+1. Inspecciona el entorno de Google AI Studio.
+2. Comprueba qué framework y herramientas están disponibles.
+3. Revisa los archivos existentes antes de modificarlos.
+4. Elige una arquitectura compatible con el entorno.
+5. Verifica las versiones y dependencias antes de utilizarlas.
+6. Implementa primero la estructura principal.
+7. Continúa con las funcionalidades y las integraciones.
+8. Prueba los flujos completos.
+
+Si el entorno utiliza React y TypeScript, prefiere componentes reutilizables, tipado explícito y separación entre presentación, lógica y acceso a datos.
+
+No impongas un framework incompatible con el proyecto existente.
+
+Organiza el código en módulos equivalentes a:
+
+* components
+* screens
+* layouts
+* navigation
+* i18n
+* data
+* services
+* repositories
+* hooks
+* types
+* validation
+* configuration
+* server
+* tests
+
+Adapta los nombres a la arquitectura real.
+
+Separa claramente:
+
+* Interfaz.
+* Lógica de negocio.
+* Persistencia.
+* Servicio de Gemini.
+* Autenticación.
+* Autorización.
+* Traducciones.
+* Validaciones.
+* Contenido inicial.
+
+No concentres toda la aplicación en un único componente gigante.
+
+Evita duplicación innecesaria.
+
+Usa identificadores estables.
+
+Maneja errores de forma consistente.
+
+Incluye un README con instrucciones de instalación, configuración, desarrollo, pruebas y despliegue.
+
+⸻
+
+20. CONTENIDO INICIAL UTILIZABLE
+
+La aplicación debe abrir con contenido suficiente para que una persona pueda utilizarla inmediatamente.
+
+Incluye un conjunto inicial coherente de:
+
+* Ejercicios seguros de nivel introductorio.
+* Rutinas cortas.
+* Rutinas de duración intermedia.
+* Opciones de movilidad.
+* Actividades de bajo impacto.
+* Recetas sencillas.
+* Opciones alimentarias variadas.
+* Hábitos saludables editables.
+* Sugerencias iniciales para el asistente.
+
+El contenido debe tener una estructura clara y traducciones revisadas a los siete idiomas.
+
+No generes contenido repetitivo únicamente para aparentar volumen.
+
+No incluyas imágenes externas con direcciones inventadas.
+
+Cuando falten imágenes, utiliza iconos, ilustraciones propias o componentes gráficos sencillos.
+
+No dependas de un servicio externo de imágenes para las funciones esenciales.
+
+⸻
+
+21. EXPERIENCIA DEL USUARIO
+
+Todos los botones importantes deben ejecutar una acción real.
+
+Ejemplos:
+
+* Empezar rutina abre la rutina correspondiente.
+* Completar rutina guarda el registro.
+* Ver receta abre el detalle.
+* Añadir receta la incorpora al plan seleccionado.
+* Generar lista de compras crea una lista editable.
+* Marcar hábito guarda su estado.
+* Cambiar idioma actualiza toda la interfaz.
+* Guardar perfil persiste los cambios.
+* Eliminar registro solicita confirmación cuando corresponda.
+* Consultar al asistente envía una petición real a Gemini cuando está configurado.
+* Instalar aplicación utiliza el mecanismo disponible.
+* Cerrar sesión finaliza la sesión real.
+
+No dejes botones con enlaces vacíos.
+
+No implementes acciones que solo cambien el texto de un botón sin modificar el estado correspondiente.
+
+Añade confirmaciones para operaciones destructivas.
+
+Usa avisos claros y traducidos para operaciones exitosas y fallidas.
+
+No muestres alertas técnicas crudas al usuario.
+
+⸻
+
+22. PRIVACIDAD Y RESPONSABILIDAD
+
+Fit en Casa es una herramienta general de bienestar, no un servicio médico.
+
+La aplicación debe:
+
+* Evitar diagnósticos.
+* Evitar promesas de resultados físicos.
+* No prescribir tratamientos.
+* No fomentar trastornos alimentarios.
+* No promover restricciones alimentarias extremas.
+* No recomendar entrenar a través del dolor.
+* No presentar consejos generales como tratamiento individualizado.
+* Ofrecer orientación profesional cuando la situación lo requiera.
+* Permitir al usuario abandonar una rutina en cualquier momento.
+* Evitar recopilar datos que no sean necesarios.
+* Explicar el uso de los datos personales.
+* Ofrecer controles de privacidad y eliminación de datos.
+
+No afirmes que el producto cumple certificaciones o normativas sin verificarlo.
+
+Antes del despliegue público, documenta los requisitos de privacidad y protección de datos que deban evaluarse según los mercados donde se distribuya la aplicación.
+
+⸻
+
+23. PROHIBICIONES COMERCIALES Y DE MONETIZACIÓN
+
+Fit en Casa debe ofrecer al usuario final acceso completo a las funcionalidades implementadas.
+
+No incluyas:
+
+* Precios.
+* Pagos.
+* Suscripciones.
+* Membresías.
+* Créditos.
+* Planes comerciales.
+* Muros de pago.
+* Botones de compra.
+* Anuncios de actualización a planes superiores.
+* Mensajes que presionen para comprar.
+* Límites artificiales de uso.
+* Bloqueos de funciones para promover pagos.
+* Pantallas de checkout.
+
+No añadas monetización de ningún tipo.
+
+Las limitaciones técnicas reales, la indisponibilidad de un proveedor externo o la falta de configuración deben comunicarse con transparencia, sin convertirlas en ofertas comerciales.
+
+⸻
+
+24. PRUEBAS OBLIGATORIAS
+
+No des por terminada la aplicación al finalizar la primera compilación.
+
+Ejecuta las pruebas disponibles en el entorno.
+
+Navegación
+
+* Inicio abre correctamente.
+* Las cinco secciones inferiores funcionan.
+* El indicador de sección activa es correcto.
+* La barra inferior no tapa el contenido.
+* Los formularios funcionan en móvil y ordenador.
+
+Perfil
+
+* Se pueden configurar objetivos.
+* Se pueden editar preferencias.
+* Los cambios se guardan.
+* Los datos persisten después de recargar.
+* El usuario no accede a perfiles ajenos.
+
+Entrenamiento
+
+* Se puede abrir una rutina.
+* Se ven los ejercicios.
+* Los temporizadores funcionan.
+* La sesión puede pausarse y reanudarse.
+* La finalización genera un registro real.
+* No se crean registros duplicados accidentalmente.
+
+Alimentación
+
+* Las recetas se pueden buscar.
+* Los filtros funcionan.
+* Los favoritos persisten.
+* Las asignaciones semanales se guardan.
+* La lista de compras se puede editar.
+
+Hábitos y progreso
+
+* Se puede crear un hábito.
+* Se puede completar y deshacer.
+* El historial se actualiza.
+* Los gráficos coinciden con los registros reales.
+* Los estados vacíos son correctos.
+
+Gemini
+
+* La integración utiliza una configuración real.
+* La clave no aparece en el cliente.
+* Las respuestas respetan el idioma seleccionado.
+* Los datos de entrada se validan.
+* Los errores se gestionan.
+* El usuario recibe una respuesta honesta cuando el servicio no está disponible.
+* Las acciones propuestas por IA no se guardan sin validación.
+
+Idiomas
+
+Prueba individualmente los siete idiomas.
+
+Verifica todas las pantallas, mensajes, formularios, navegación, estados vacíos, errores y panel administrativo.
+
+Confirma que el cambio de idioma se mantiene al navegar y recargar.
+
+Comprueba que no quedan cadenas visibles en otro idioma, salvo nombres propios, marcas o términos técnicos cuya conservación sea intencionada.
+
+Persistencia y seguridad
+
+* Los datos sobreviven a la recarga cuando la arquitectura lo permite.
+* Los errores de escritura se comunican correctamente.
+* Las reglas de acceso impiden consultar datos ajenos.
+* El panel administrativo está protegido.
+* Las claves no están expuestas.
+* Los datos de demostración no se confunden con los datos reales.
+
+Responsive y PWA
+
+Prueba tamaños móviles, tabletas y ordenadores.
+
+Verifica que la navegación inferior sea usable.
+
+Comprueba el manifest, los iconos, la estrategia de caché y el comportamiento de instalación cuando el entorno lo permita.
+
+No declares una prueba como superada si no se ha ejecutado o si no hay evidencia suficiente.
+
+⸻
+
+25. CRITERIOS DE ACEPTACIÓN
+
+La aplicación se considerará lista para su primera entrega cuando:
+
+1. Se pueda navegar por todas las secciones.
+2. El usuario pueda configurar su perfil.
+3. Exista contenido real de entrenamiento y alimentación.
+4. Se puedan completar y registrar actividades.
+5. Se puedan administrar hábitos.
+6. El progreso se calcule a partir de datos reales.
+7. El asistente Gemini funcione cuando esté configurado.
+8. La persistencia funcione según el modo seleccionado.
+9. El sistema de traducción esté completo en los siete idiomas.
+10. El diseño sea responsive.
+11. La instalación PWA esté configurada y probada cuando sea posible.
+12. El panel administrativo tenga controles de acceso.
+13. No existan errores críticos conocidos sin documentar.
+14. Los controles principales tengan comportamientos funcionales.
+15. No haya precios, pagos, membresías ni límites artificiales.
+16. Exista documentación suficiente para continuar el desarrollo y desplegar.
+
+Si una integración no puede completarse por falta de credenciales o permisos, entrega el resto de la aplicación funcional y señala exactamente qué debe configurarse.
+
+⸻
+
+26. PLAN DE EJECUCIÓN
+
+Trabaja en este orden:
+
+FASE 1 — Inspección del entorno y elección de arquitectura.
+
+FASE 2 — Diseño visual, navegación y componentes base.
+
+FASE 3 — Onboarding, perfil e internacionalización.
+
+FASE 4 — Inicio, ejercicios y rutinas.
+
+FASE 5 — Recetas, planificación alimentaria y lista de compras.
+
+FASE 6 — Hábitos y seguimiento del progreso.
+
+FASE 7 — Integración segura con Gemini.
+
+FASE 8 — Persistencia, autenticación y reglas de seguridad.
+
+FASE 9 — Panel administrativo.
+
+FASE 10 — PWA, instalación y experiencia responsive.
+
+FASE 11 — Pruebas funcionales, de seguridad y de traducción.
+
+FASE 12 — Documentación y preparación para despliegue.
+
+No te detengas después de mostrar el diseño inicial.
+
+Avanza de forma autónoma hasta completar todo lo que permita el entorno disponible.
+
+Si una decisión técnica es necesaria y no se ha especificado, elige una opción razonable compatible con el proyecto, priorizando simplicidad, seguridad, mantenibilidad y funcionalidad.
+
+No me hagas preguntas sobre decisiones técnicas menores que puedas resolver de manera fundamentada.
+
+Si necesitas una credencial, un permiso o una acción externa que solo yo pueda realizar, continúa con el resto de la implementación y presenta una instrucción clara para desbloquear ese paso.
+
+⸻
+
+27. ENTREGA FINAL
+
+Cuando hayas terminado, proporciona un resumen breve y concreto que incluya:
+
+1. Qué se ha implementado realmente.
+2. Qué pantallas y funciones están operativas.
+3. Qué persistencia se ha configurado.
+4. Cómo funciona la integración con Gemini.
+5. Qué servicios externos necesitan configuración adicional.
+6. Qué idiomas se han probado.
+7. Qué pruebas se han ejecutado y sus resultados.
+8. Cómo iniciar y ejecutar la aplicación.
+9. Cómo configurar las variables de entorno.
+10. Cómo preparar el despliegue.
+11. Qué limitaciones reales siguen pendientes.
+
+Distingue claramente entre funciones implementadas, funciones probadas y funciones pendientes.
+
+No afirmes que la aplicación está completamente terminada si existen dependencias críticas sin resolver.
+
+INSTRUCCIÓN FINAL
+
+Comienza ahora inspeccionando el entorno de Google AI Studio y los archivos del proyecto.
+
+Después, construye Fit en Casa directamente en el entorno disponible, con una experiencia visual premium, funcionalidades reales, persistencia, integración segura de Gemini, navegación inferior fija y traducción completa a los siete idiomas especificados.
+
+Tu objetivo es entregar una MiniApp de bienestar funcional, intuitiva, segura, instalable y lista para probar, no una demostración superficial ni una página informativa.
+
+Prioriza siempre la calidad funcional, la seguridad, la claridad y una excelente experiencia para el usuario final.
